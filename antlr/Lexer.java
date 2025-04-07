@@ -1,5 +1,4 @@
-
-// $ANTLR 3.4 C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g 2025-04-08 00:38:29
+// $ANTLR 3.4 C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g 2025-04-08 00:58:20
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -358,15 +357,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = SELECT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:57:8: ( 'SELECT' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:57:10: 'SELECT'
-            {
-            match("SELECT"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:47:8: ( 'select' | 'SELECT' )
+            int alt1=2;
+            int LA1_0 = input.LA(1);
 
+            if ( (LA1_0=='s') ) {
+                alt1=1;
+            }
+            else if ( (LA1_0=='S') ) {
+                alt1=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 1, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt1) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:47:10: 'select'
+                    {
+                    match("select"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:47:21: 'SELECT'
+                    {
+                    match("SELECT"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -381,15 +409,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = FROM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:58:6: ( 'FROM' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:58:8: 'FROM'
-            {
-            match("FROM"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:48:6: ( 'from' | 'FROM' )
+            int alt2=2;
+            int LA2_0 = input.LA(1);
 
+            if ( (LA2_0=='f') ) {
+                alt2=1;
+            }
+            else if ( (LA2_0=='F') ) {
+                alt2=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 2, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt2) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:48:8: 'from'
+                    {
+                    match("from"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:48:17: 'FROM'
+                    {
+                    match("FROM"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -404,15 +461,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = WHERE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:59:7: ( 'WHERE' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:59:9: 'WHERE'
-            {
-            match("WHERE"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:49:7: ( 'where' | 'WHERE' )
+            int alt3=2;
+            int LA3_0 = input.LA(1);
 
+            if ( (LA3_0=='w') ) {
+                alt3=1;
+            }
+            else if ( (LA3_0=='W') ) {
+                alt3=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 3, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt3) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:49:9: 'where'
+                    {
+                    match("where"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:49:19: 'WHERE'
+                    {
+                    match("WHERE"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -427,15 +513,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = GROUP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:60:7: ( 'GROUP' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:60:9: 'GROUP'
-            {
-            match("GROUP"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:50:7: ( 'group' | 'GROUP' )
+            int alt4=2;
+            int LA4_0 = input.LA(1);
 
+            if ( (LA4_0=='g') ) {
+                alt4=1;
+            }
+            else if ( (LA4_0=='G') ) {
+                alt4=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 4, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt4) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:50:9: 'group'
+                    {
+                    match("group"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:50:19: 'GROUP'
+                    {
+                    match("GROUP"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -450,15 +565,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = BY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:61:4: ( 'BY' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:61:6: 'BY'
-            {
-            match("BY"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:51:4: ( 'by' | 'BY' )
+            int alt5=2;
+            int LA5_0 = input.LA(1);
 
+            if ( (LA5_0=='b') ) {
+                alt5=1;
+            }
+            else if ( (LA5_0=='B') ) {
+                alt5=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 5, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt5) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:51:6: 'by'
+                    {
+                    match("by"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:51:13: 'BY'
+                    {
+                    match("BY"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -473,15 +617,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = HAVING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:62:8: ( 'HAVING' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:62:10: 'HAVING'
-            {
-            match("HAVING"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:52:8: ( 'having' | 'HAVING' )
+            int alt6=2;
+            int LA6_0 = input.LA(1);
 
+            if ( (LA6_0=='h') ) {
+                alt6=1;
+            }
+            else if ( (LA6_0=='H') ) {
+                alt6=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 6, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt6) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:52:10: 'having'
+                    {
+                    match("having"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:52:21: 'HAVING'
+                    {
+                    match("HAVING"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -496,15 +669,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = ORDER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:63:7: ( 'ORDER' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:63:9: 'ORDER'
-            {
-            match("ORDER"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:53:7: ( 'order' | 'ORDER' )
+            int alt7=2;
+            int LA7_0 = input.LA(1);
 
+            if ( (LA7_0=='o') ) {
+                alt7=1;
+            }
+            else if ( (LA7_0=='O') ) {
+                alt7=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 7, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt7) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:53:9: 'order'
+                    {
+                    match("order"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:53:19: 'ORDER'
+                    {
+                    match("ORDER"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -519,15 +721,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = LIMIT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:64:7: ( 'LIMIT' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:64:9: 'LIMIT'
-            {
-            match("LIMIT"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:54:7: ( 'limit' | 'LIMIT' )
+            int alt8=2;
+            int LA8_0 = input.LA(1);
 
+            if ( (LA8_0=='l') ) {
+                alt8=1;
+            }
+            else if ( (LA8_0=='L') ) {
+                alt8=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 8, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt8) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:54:9: 'limit'
+                    {
+                    match("limit"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:54:19: 'LIMIT'
+                    {
+                    match("LIMIT"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -542,15 +773,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = JOIN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:65:6: ( 'JOIN' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:65:8: 'JOIN'
-            {
-            match("JOIN"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:55:6: ( 'join' | 'JOIN' )
+            int alt9=2;
+            int LA9_0 = input.LA(1);
 
+            if ( (LA9_0=='j') ) {
+                alt9=1;
+            }
+            else if ( (LA9_0=='J') ) {
+                alt9=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 9, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt9) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:55:8: 'join'
+                    {
+                    match("join"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:55:17: 'JOIN'
+                    {
+                    match("JOIN"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -565,15 +825,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = ON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:66:4: ( 'ON' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:66:6: 'ON'
-            {
-            match("ON"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:56:4: ( 'on' | 'ON' )
+            int alt10=2;
+            int LA10_0 = input.LA(1);
 
+            if ( (LA10_0=='o') ) {
+                alt10=1;
+            }
+            else if ( (LA10_0=='O') ) {
+                alt10=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 10, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt10) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:56:6: 'on'
+                    {
+                    match("on"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:56:13: 'ON'
+                    {
+                    match("ON"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -588,15 +877,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = RIGHT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:67:7: ( 'RIGHT' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:67:9: 'RIGHT'
-            {
-            match("RIGHT"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:57:7: ( 'right' | 'RIGHT' )
+            int alt11=2;
+            int LA11_0 = input.LA(1);
 
+            if ( (LA11_0=='r') ) {
+                alt11=1;
+            }
+            else if ( (LA11_0=='R') ) {
+                alt11=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 11, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt11) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:57:9: 'right'
+                    {
+                    match("right"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:57:19: 'RIGHT'
+                    {
+                    match("RIGHT"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -611,15 +929,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = LEFT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:68:6: ( 'LEFT' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:68:8: 'LEFT'
-            {
-            match("LEFT"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:58:6: ( 'left' | 'LEFT' )
+            int alt12=2;
+            int LA12_0 = input.LA(1);
 
+            if ( (LA12_0=='l') ) {
+                alt12=1;
+            }
+            else if ( (LA12_0=='L') ) {
+                alt12=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 12, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt12) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:58:8: 'left'
+                    {
+                    match("left"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:58:17: 'LEFT'
+                    {
+                    match("LEFT"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -634,15 +981,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = INNER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:69:7: ( 'INNER' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:69:9: 'INNER'
-            {
-            match("INNER"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:59:7: ( 'inner' | 'INNER' )
+            int alt13=2;
+            int LA13_0 = input.LA(1);
 
+            if ( (LA13_0=='i') ) {
+                alt13=1;
+            }
+            else if ( (LA13_0=='I') ) {
+                alt13=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 13, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt13) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:59:9: 'inner'
+                    {
+                    match("inner"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:59:19: 'INNER'
+                    {
+                    match("INNER"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -657,15 +1033,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = FULL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:70:6: ( 'FULL' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:70:8: 'FULL'
-            {
-            match("FULL"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:60:6: ( 'full' | 'FULL' )
+            int alt14=2;
+            int LA14_0 = input.LA(1);
 
+            if ( (LA14_0=='f') ) {
+                alt14=1;
+            }
+            else if ( (LA14_0=='F') ) {
+                alt14=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 14, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt14) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:60:8: 'full'
+                    {
+                    match("full"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:60:17: 'FULL'
+                    {
+                    match("FULL"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -680,15 +1085,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = OUTER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:71:7: ( 'OUTER' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:71:9: 'OUTER'
-            {
-            match("OUTER"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:61:7: ( 'outer' | 'OUTER' )
+            int alt15=2;
+            int LA15_0 = input.LA(1);
 
+            if ( (LA15_0=='o') ) {
+                alt15=1;
+            }
+            else if ( (LA15_0=='O') ) {
+                alt15=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 15, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt15) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:61:9: 'outer'
+                    {
+                    match("outer"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:61:19: 'OUTER'
+                    {
+                    match("OUTER"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -703,15 +1137,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = CROSS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:72:7: ( 'CROSS' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:72:9: 'CROSS'
-            {
-            match("CROSS"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:62:7: ( 'cross' | 'CROSS' )
+            int alt16=2;
+            int LA16_0 = input.LA(1);
 
+            if ( (LA16_0=='c') ) {
+                alt16=1;
+            }
+            else if ( (LA16_0=='C') ) {
+                alt16=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 16, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt16) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:62:9: 'cross'
+                    {
+                    match("cross"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:62:19: 'CROSS'
+                    {
+                    match("CROSS"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -726,15 +1189,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = DESC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:73:6: ( 'DESC' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:73:8: 'DESC'
-            {
-            match("DESC"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:63:6: ( 'desc' | 'DESC' )
+            int alt17=2;
+            int LA17_0 = input.LA(1);
 
+            if ( (LA17_0=='d') ) {
+                alt17=1;
+            }
+            else if ( (LA17_0=='D') ) {
+                alt17=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 17, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt17) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:63:8: 'desc'
+                    {
+                    match("desc"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:63:17: 'DESC'
+                    {
+                    match("DESC"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -749,15 +1241,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = ASC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:74:5: ( 'ASC' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:74:7: 'ASC'
-            {
-            match("ASC"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:64:5: ( 'asc' | 'ASC' )
+            int alt18=2;
+            int LA18_0 = input.LA(1);
 
+            if ( (LA18_0=='a') ) {
+                alt18=1;
+            }
+            else if ( (LA18_0=='A') ) {
+                alt18=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 18, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt18) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:64:7: 'asc'
+                    {
+                    match("asc"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:64:15: 'ASC'
+                    {
+                    match("ASC"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -772,15 +1293,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = AS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:75:4: ( 'AS' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:75:6: 'AS'
-            {
-            match("AS"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:65:4: ( 'as' | 'AS' )
+            int alt19=2;
+            int LA19_0 = input.LA(1);
 
+            if ( (LA19_0=='a') ) {
+                alt19=1;
+            }
+            else if ( (LA19_0=='A') ) {
+                alt19=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 19, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt19) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:65:6: 'as'
+                    {
+                    match("as"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:65:13: 'AS'
+                    {
+                    match("AS"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -795,15 +1345,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = RANK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:76:6: ( 'RANK' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:76:8: 'RANK'
-            {
-            match("RANK"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:66:6: ( 'rank' | 'RANK' )
+            int alt20=2;
+            int LA20_0 = input.LA(1);
 
+            if ( (LA20_0=='r') ) {
+                alt20=1;
+            }
+            else if ( (LA20_0=='R') ) {
+                alt20=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 20, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt20) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:66:8: 'rank'
+                    {
+                    match("rank"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:66:17: 'RANK'
+                    {
+                    match("RANK"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -818,15 +1397,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = DISTINCT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:77:10: ( 'DISTINCT' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:77:12: 'DISTINCT'
-            {
-            match("DISTINCT"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:67:10: ( 'distinct' | 'DISTINCT' )
+            int alt21=2;
+            int LA21_0 = input.LA(1);
 
+            if ( (LA21_0=='d') ) {
+                alt21=1;
+            }
+            else if ( (LA21_0=='D') ) {
+                alt21=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 21, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt21) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:67:12: 'distinct'
+                    {
+                    match("distinct"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:67:25: 'DISTINCT'
+                    {
+                    match("DISTINCT"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -841,15 +1449,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = WITH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:78:6: ( 'WITH' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:78:8: 'WITH'
-            {
-            match("WITH"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:68:6: ( 'with' | 'WITH' )
+            int alt22=2;
+            int LA22_0 = input.LA(1);
 
+            if ( (LA22_0=='w') ) {
+                alt22=1;
+            }
+            else if ( (LA22_0=='W') ) {
+                alt22=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 22, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt22) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:68:8: 'with'
+                    {
+                    match("with"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:68:17: 'WITH'
+                    {
+                    match("WITH"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -864,15 +1501,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = COUNT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:80:7: ( 'COUNT' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:80:9: 'COUNT'
-            {
-            match("COUNT"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:70:7: ( 'count' | 'COUNT' )
+            int alt23=2;
+            int LA23_0 = input.LA(1);
 
+            if ( (LA23_0=='c') ) {
+                alt23=1;
+            }
+            else if ( (LA23_0=='C') ) {
+                alt23=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 23, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt23) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:70:9: 'count'
+                    {
+                    match("count"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:70:19: 'COUNT'
+                    {
+                    match("COUNT"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -887,15 +1553,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = SUM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:81:5: ( 'SUM' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:81:7: 'SUM'
-            {
-            match("SUM"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:71:5: ( 'sum' | 'SUM' )
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
+            if ( (LA24_0=='s') ) {
+                alt24=1;
+            }
+            else if ( (LA24_0=='S') ) {
+                alt24=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 24, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt24) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:71:7: 'sum'
+                    {
+                    match("sum"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:71:15: 'SUM'
+                    {
+                    match("SUM"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -910,15 +1605,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = AVG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:82:5: ( 'AVG' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:82:7: 'AVG'
-            {
-            match("AVG"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:72:5: ( 'avg' | 'AVG' )
+            int alt25=2;
+            int LA25_0 = input.LA(1);
 
+            if ( (LA25_0=='a') ) {
+                alt25=1;
+            }
+            else if ( (LA25_0=='A') ) {
+                alt25=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 25, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt25) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:72:7: 'avg'
+                    {
+                    match("avg"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:72:15: 'AVG'
+                    {
+                    match("AVG"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -933,15 +1657,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = MIN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:83:5: ( 'MIN' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:83:7: 'MIN'
-            {
-            match("MIN"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:73:5: ( 'min' | 'MIN' )
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
+            if ( (LA26_0=='m') ) {
+                alt26=1;
+            }
+            else if ( (LA26_0=='M') ) {
+                alt26=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 26, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt26) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:73:7: 'min'
+                    {
+                    match("min"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:73:15: 'MIN'
+                    {
+                    match("MIN"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -956,15 +1709,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = MAX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:84:5: ( 'MAX' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:84:7: 'MAX'
-            {
-            match("MAX"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:74:5: ( 'max' | 'MAX' )
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
+            if ( (LA27_0=='m') ) {
+                alt27=1;
+            }
+            else if ( (LA27_0=='M') ) {
+                alt27=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 27, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt27) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:74:7: 'max'
+                    {
+                    match("max"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:74:15: 'MAX'
+                    {
+                    match("MAX"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -979,15 +1761,44 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = GROUP_CONCAT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:85:14: ( 'GROUP_CONCAT' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:85:16: 'GROUP_CONCAT'
-            {
-            match("GROUP_CONCAT"); 
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:75:14: ( 'group_concat' | 'GROUP_CONCAT' )
+            int alt28=2;
+            int LA28_0 = input.LA(1);
 
+            if ( (LA28_0=='g') ) {
+                alt28=1;
+            }
+            else if ( (LA28_0=='G') ) {
+                alt28=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 28, 0, input);
 
+                throw nvae;
 
             }
+            switch (alt28) {
+                case 1 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:75:16: 'group_concat'
+                    {
+                    match("group_concat"); 
 
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:75:33: 'GROUP_CONCAT'
+                    {
+                    match("GROUP_CONCAT"); 
+
+
+
+                    }
+                    break;
+
+            }
             state.type = _type;
             state.channel = _channel;
         }
@@ -1002,26 +1813,49 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = LOGIC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:87:7: ( 'AND' | 'OR' )
-            int alt1=2;
-            int LA1_0 = input.LA(1);
-
-            if ( (LA1_0=='A') ) {
-                alt1=1;
-            }
-            else if ( (LA1_0=='O') ) {
-                alt1=2;
-            }
-            else {
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:77:7: ( 'and' | 'AND' | 'or' | 'OR' )
+            int alt29=4;
+            switch ( input.LA(1) ) {
+            case 'a':
+                {
+                alt29=1;
+                }
+                break;
+            case 'A':
+                {
+                alt29=2;
+                }
+                break;
+            case 'o':
+                {
+                alt29=3;
+                }
+                break;
+            case 'O':
+                {
+                alt29=4;
+                }
+                break;
+            default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 1, 0, input);
+                    new NoViableAltException("", 29, 0, input);
 
                 throw nvae;
 
             }
-            switch (alt1) {
+
+            switch (alt29) {
                 case 1 :
-                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:87:9: 'AND'
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:77:9: 'and'
+                    {
+                    match("and"); 
+
+
+
+                    }
+                    break;
+                case 2 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:77:17: 'AND'
                     {
                     match("AND"); 
 
@@ -1029,8 +1863,17 @@ public class SQLParserLexer extends Lexer {
 
                     }
                     break;
-                case 2 :
-                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:87:17: 'OR'
+                case 3 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:77:25: 'or'
+                    {
+                    match("or"); 
+
+
+
+                    }
+                    break;
+                case 4 :
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:77:32: 'OR'
                     {
                     match("OR"); 
 
@@ -1054,8 +1897,8 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:89:4: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:89:6: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:78:4: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:78:6: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -1067,18 +1910,18 @@ public class SQLParserLexer extends Lexer {
             }
 
 
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:89:34: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
-            loop2:
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:78:34: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            loop30:
             do {
-                int alt2=2;
-                int LA2_0 = input.LA(1);
+                int alt30=2;
+                int LA30_0 = input.LA(1);
 
-                if ( ((LA2_0 >= '0' && LA2_0 <= '9')||(LA2_0 >= 'A' && LA2_0 <= 'Z')||LA2_0=='_'||(LA2_0 >= 'a' && LA2_0 <= 'z')) ) {
-                    alt2=1;
+                if ( ((LA30_0 >= '0' && LA30_0 <= '9')||(LA30_0 >= 'A' && LA30_0 <= 'Z')||LA30_0=='_'||(LA30_0 >= 'a' && LA30_0 <= 'z')) ) {
+                    alt30=1;
                 }
 
 
-                switch (alt2) {
+                switch (alt30) {
             	case 1 :
             	    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:
             	    {
@@ -1096,7 +1939,7 @@ public class SQLParserLexer extends Lexer {
             	    break;
 
             	default :
-            	    break loop2;
+            	    break loop30;
                 }
             } while (true);
 
@@ -1117,47 +1960,47 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:90:8: ( '\\'' (~ '\\'' | '\\\\\\'' )* '\\'' )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:90:10: '\\'' (~ '\\'' | '\\\\\\'' )* '\\''
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:79:8: ( '\\'' (~ '\\'' | '\\\\\\'' )* '\\'' )
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:79:10: '\\'' (~ '\\'' | '\\\\\\'' )* '\\''
             {
             match('\''); 
 
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:90:15: (~ '\\'' | '\\\\\\'' )*
-            loop3:
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:79:15: (~ '\\'' | '\\\\\\'' )*
+            loop31:
             do {
-                int alt3=3;
-                int LA3_0 = input.LA(1);
+                int alt31=3;
+                int LA31_0 = input.LA(1);
 
-                if ( (LA3_0=='\\') ) {
-                    int LA3_2 = input.LA(2);
+                if ( (LA31_0=='\\') ) {
+                    int LA31_2 = input.LA(2);
 
-                    if ( (LA3_2=='\'') ) {
-                        int LA3_4 = input.LA(3);
+                    if ( (LA31_2=='\'') ) {
+                        int LA31_4 = input.LA(3);
 
-                        if ( ((LA3_4 >= '\u0000' && LA3_4 <= '\uFFFF')) ) {
-                            alt3=2;
+                        if ( ((LA31_4 >= '\u0000' && LA31_4 <= '\uFFFF')) ) {
+                            alt31=2;
                         }
 
                         else {
-                            alt3=1;
+                            alt31=1;
                         }
 
 
                     }
-                    else if ( ((LA3_2 >= '\u0000' && LA3_2 <= '&')||(LA3_2 >= '(' && LA3_2 <= '\uFFFF')) ) {
-                        alt3=1;
+                    else if ( ((LA31_2 >= '\u0000' && LA31_2 <= '&')||(LA31_2 >= '(' && LA31_2 <= '\uFFFF')) ) {
+                        alt31=1;
                     }
 
 
                 }
-                else if ( ((LA3_0 >= '\u0000' && LA3_0 <= '&')||(LA3_0 >= '(' && LA3_0 <= '[')||(LA3_0 >= ']' && LA3_0 <= '\uFFFF')) ) {
-                    alt3=1;
+                else if ( ((LA31_0 >= '\u0000' && LA31_0 <= '&')||(LA31_0 >= '(' && LA31_0 <= '[')||(LA31_0 >= ']' && LA31_0 <= '\uFFFF')) ) {
+                    alt31=1;
                 }
 
 
-                switch (alt3) {
+                switch (alt31) {
             	case 1 :
-            	    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:90:16: ~ '\\''
+            	    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:79:16: ~ '\\''
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '&')||(input.LA(1) >= '(' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -1172,7 +2015,7 @@ public class SQLParserLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:90:24: '\\\\\\''
+            	    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:79:24: '\\\\\\''
             	    {
             	    match("\\'"); 
 
@@ -1182,7 +2025,7 @@ public class SQLParserLexer extends Lexer {
             	    break;
 
             	default :
-            	    break loop3;
+            	    break loop31;
                 }
             } while (true);
 
@@ -1205,19 +2048,19 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:91:5: ( ( '-' )? ( '0' .. '9' )+ )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:91:7: ( '-' )? ( '0' .. '9' )+
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:80:5: ( ( '-' )? ( '1' .. '9' ) ( '0' .. '9' )* )
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:80:7: ( '-' )? ( '1' .. '9' ) ( '0' .. '9' )*
             {
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:91:7: ( '-' )?
-            int alt4=2;
-            int LA4_0 = input.LA(1);
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:80:7: ( '-' )?
+            int alt32=2;
+            int LA32_0 = input.LA(1);
 
-            if ( (LA4_0=='-') ) {
-                alt4=1;
+            if ( (LA32_0=='-') ) {
+                alt32=1;
             }
-            switch (alt4) {
+            switch (alt32) {
                 case 1 :
-                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:91:7: '-'
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:80:7: '-'
                     {
                     match('-'); 
 
@@ -1227,19 +2070,28 @@ public class SQLParserLexer extends Lexer {
             }
 
 
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:91:12: ( '0' .. '9' )+
-            int cnt5=0;
-            loop5:
-            do {
-                int alt5=2;
-                int LA5_0 = input.LA(1);
+            if ( (input.LA(1) >= '1' && input.LA(1) <= '9') ) {
+                input.consume();
+            }
+            else {
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;
+            }
 
-                if ( ((LA5_0 >= '0' && LA5_0 <= '9')) ) {
-                    alt5=1;
+
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:80:23: ( '0' .. '9' )*
+            loop33:
+            do {
+                int alt33=2;
+                int LA33_0 = input.LA(1);
+
+                if ( ((LA33_0 >= '0' && LA33_0 <= '9')) ) {
+                    alt33=1;
                 }
 
 
-                switch (alt5) {
+                switch (alt33) {
             	case 1 :
             	    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:
             	    {
@@ -1257,12 +2109,8 @@ public class SQLParserLexer extends Lexer {
             	    break;
 
             	default :
-            	    if ( cnt5 >= 1 ) break loop5;
-                        EarlyExitException eee =
-                            new EarlyExitException(5, input);
-                        throw eee;
+            	    break loop33;
                 }
-                cnt5++;
             } while (true);
 
 
@@ -1282,62 +2130,26 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = DOUBLE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:92:8: ( INT ( '.' ( '0' .. '9' )+ )? )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:92:10: INT ( '.' ( '0' .. '9' )+ )?
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:81:8: ( INT ( '.' INT )? )
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:81:10: INT ( '.' INT )?
             {
             mINT(); 
 
 
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:92:14: ( '.' ( '0' .. '9' )+ )?
-            int alt7=2;
-            int LA7_0 = input.LA(1);
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:81:14: ( '.' INT )?
+            int alt34=2;
+            int LA34_0 = input.LA(1);
 
-            if ( (LA7_0=='.') ) {
-                alt7=1;
+            if ( (LA34_0=='.') ) {
+                alt34=1;
             }
-            switch (alt7) {
+            switch (alt34) {
                 case 1 :
-                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:92:15: '.' ( '0' .. '9' )+
+                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:81:15: '.' INT
                     {
                     match('.'); 
 
-                    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:92:19: ( '0' .. '9' )+
-                    int cnt6=0;
-                    loop6:
-                    do {
-                        int alt6=2;
-                        int LA6_0 = input.LA(1);
-
-                        if ( ((LA6_0 >= '0' && LA6_0 <= '9')) ) {
-                            alt6=1;
-                        }
-
-
-                        switch (alt6) {
-                    	case 1 :
-                    	    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:
-                    	    {
-                    	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
-                    	        input.consume();
-                    	    }
-                    	    else {
-                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
-                    	        recover(mse);
-                    	        throw mse;
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    if ( cnt6 >= 1 ) break loop6;
-                                EarlyExitException eee =
-                                    new EarlyExitException(6, input);
-                                throw eee;
-                        }
-                        cnt6++;
-                    } while (true);
+                    mINT(); 
 
 
                     }
@@ -1362,22 +2174,22 @@ public class SQLParserLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:94:4: ( ( ' ' | '\\n' | '\\r' | '\\t' )+ )
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:94:6: ( ' ' | '\\n' | '\\r' | '\\t' )+
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:83:3: ( ( ' ' | '\\n' | '\\r' | '\\t' )+ )
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:83:5: ( ' ' | '\\n' | '\\r' | '\\t' )+
             {
-            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:94:6: ( ' ' | '\\n' | '\\r' | '\\t' )+
-            int cnt8=0;
-            loop8:
+            // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:83:5: ( ' ' | '\\n' | '\\r' | '\\t' )+
+            int cnt35=0;
+            loop35:
             do {
-                int alt8=2;
-                int LA8_0 = input.LA(1);
+                int alt35=2;
+                int LA35_0 = input.LA(1);
 
-                if ( ((LA8_0 >= '\t' && LA8_0 <= '\n')||LA8_0=='\r'||LA8_0==' ') ) {
-                    alt8=1;
+                if ( ((LA35_0 >= '\t' && LA35_0 <= '\n')||LA35_0=='\r'||LA35_0==' ') ) {
+                    alt35=1;
                 }
 
 
-                switch (alt8) {
+                switch (alt35) {
             	case 1 :
             	    // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:
             	    {
@@ -1395,12 +2207,12 @@ public class SQLParserLexer extends Lexer {
             	    break;
 
             	default :
-            	    if ( cnt8 >= 1 ) break loop8;
+            	    if ( cnt35 >= 1 ) break loop35;
                         EarlyExitException eee =
-                            new EarlyExitException(8, input);
+                            new EarlyExitException(35, input);
                         throw eee;
                 }
-                cnt8++;
+                cnt35++;
             } while (true);
 
 
@@ -1419,9 +2231,9 @@ public class SQLParserLexer extends Lexer {
 
     public void mTokens() throws RecognitionException {
         // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:1:8: ( T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | SELECT | FROM | WHERE | GROUP | BY | HAVING | ORDER | LIMIT | JOIN | ON | RIGHT | LEFT | INNER | FULL | OUTER | CROSS | DESC | ASC | AS | RANK | DISTINCT | WITH | COUNT | SUM | AVG | MIN | MAX | GROUP_CONCAT | LOGIC | ID | STRING | INT | DOUBLE | WS )
-        int alt9=47;
-        alt9 = dfa9.predict(input);
-        switch (alt9) {
+        int alt36=47;
+        alt36 = dfa36.predict(input);
+        switch (alt36) {
             case 1 :
                 // C:\\Users\\ogoda\\OneDrive\\Documents\\SQLParser.g:1:10: T__38
                 {
@@ -1804,61 +2616,84 @@ public class SQLParserLexer extends Lexer {
     }
 
 
-    protected DFA9 dfa9 = new DFA9(this);
-    static final String DFA9_eotS =
-        "\10\uffff\1\41\1\uffff\1\43\17\32\3\uffff\1\77\6\uffff\7\32\1\110"+
-        "\1\32\1\113\1\114\13\32\1\131\4\32\2\uffff\1\32\1\137\5\32\1\uffff"+
-        "\2\32\2\uffff\13\32\1\162\1\uffff\1\163\1\113\1\164\1\165\1\32\1"+
-        "\uffff\1\167\1\170\1\32\1\172\5\32\1\u0080\1\u0081\1\32\1\u0083"+
-        "\3\32\1\u0087\1\32\4\uffff\1\32\2\uffff\1\u008a\1\uffff\1\u008c"+
-        "\1\32\1\u008e\1\u008f\1\u0090\2\uffff\1\u0091\1\uffff\1\u0092\1"+
-        "\u0093\1\u0094\1\uffff\1\32\1\u0096\1\uffff\1\32\1\uffff\1\u0098"+
-        "\7\uffff\1\32\1\uffff\1\32\1\uffff\2\32\1\u009d\1\32\1\uffff\2\32"+
-        "\1\u00a1\1\uffff";
-    static final String DFA9_eofS =
-        "\u00a2\uffff";
-    static final String DFA9_minS =
-        "\1\11\7\uffff\1\75\1\uffff\1\75\1\105\1\122\1\110\1\122\1\131\1"+
-        "\101\1\116\1\105\1\117\1\101\1\116\1\117\1\105\1\116\1\101\2\uffff"+
-        "\1\60\1\56\6\uffff\1\114\1\115\1\117\1\114\1\105\1\124\1\117\1\60"+
-        "\1\126\2\60\1\124\1\115\1\106\1\111\1\107\2\116\1\117\1\125\2\123"+
-        "\1\60\1\107\1\104\1\116\1\130\2\uffff\1\105\1\60\1\115\1\114\1\122"+
-        "\1\110\1\125\1\uffff\1\111\1\105\2\uffff\1\105\1\111\1\124\1\116"+
-        "\1\110\1\113\1\105\1\123\1\116\1\103\1\124\1\60\1\uffff\4\60\1\103"+
-        "\1\uffff\2\60\1\105\1\60\1\120\1\116\2\122\1\124\2\60\1\124\1\60"+
-        "\1\122\1\123\1\124\1\60\1\111\4\uffff\1\124\2\uffff\1\60\1\uffff"+
-        "\1\60\1\107\3\60\2\uffff\1\60\1\uffff\3\60\1\uffff\1\116\1\60\1"+
-        "\uffff\1\103\1\uffff\1\60\7\uffff\1\103\1\uffff\1\117\1\uffff\1"+
-        "\124\1\116\1\60\1\103\1\uffff\1\101\1\124\1\60\1\uffff";
-    static final String DFA9_maxS =
-        "\1\172\7\uffff\1\76\1\uffff\1\75\2\125\1\111\1\122\1\131\1\101\1"+
-        "\125\1\111\1\117\1\111\1\116\1\122\1\111\1\126\1\111\2\uffff\2\71"+
-        "\6\uffff\1\114\1\115\1\117\1\114\1\105\1\124\1\117\1\172\1\126\2"+
-        "\172\1\124\1\115\1\106\1\111\1\107\2\116\1\117\1\125\2\123\1\172"+
-        "\1\107\1\104\1\116\1\130\2\uffff\1\105\1\172\1\115\1\114\1\122\1"+
-        "\110\1\125\1\uffff\1\111\1\105\2\uffff\1\105\1\111\1\124\1\116\1"+
-        "\110\1\113\1\105\1\123\1\116\1\103\1\124\1\172\1\uffff\4\172\1\103"+
-        "\1\uffff\2\172\1\105\1\172\1\120\1\116\2\122\1\124\2\172\1\124\1"+
-        "\172\1\122\1\123\1\124\1\172\1\111\4\uffff\1\124\2\uffff\1\172\1"+
-        "\uffff\1\172\1\107\3\172\2\uffff\1\172\1\uffff\3\172\1\uffff\1\116"+
-        "\1\172\1\uffff\1\103\1\uffff\1\172\7\uffff\1\103\1\uffff\1\117\1"+
-        "\uffff\1\124\1\116\1\172\1\103\1\uffff\1\101\1\124\1\172\1\uffff";
-    static final String DFA9_acceptS =
-        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\uffff\1\13\20\uffff\1\53"+
-        "\1\54\2\uffff\1\57\1\11\1\12\1\10\1\15\1\14\33\uffff\1\55\1\56\7"+
-        "\uffff\1\22\2\uffff\1\52\1\27\14\uffff\1\40\5\uffff\1\45\22\uffff"+
-        "\1\37\1\46\1\47\1\50\1\uffff\1\17\1\33\1\uffff\1\43\5\uffff\1\31"+
-        "\1\26\1\uffff\1\41\3\uffff\1\36\2\uffff\1\20\1\uffff\1\21\1\uffff"+
-        "\1\24\1\34\1\25\1\30\1\32\1\35\1\44\1\uffff\1\16\1\uffff\1\23\4"+
-        "\uffff\1\42\3\uffff\1\51";
-    static final String DFA9_specialS =
-        "\u00a2\uffff}>";
-    static final String[] DFA9_transitionS = {
-            "\2\36\2\uffff\1\36\22\uffff\1\36\1\1\5\uffff\1\33\1\2\1\3\1"+
-            "\4\1\uffff\1\5\1\34\1\6\1\uffff\12\35\1\uffff\1\7\1\10\1\11"+
-            "\1\12\2\uffff\1\30\1\17\1\26\1\27\1\32\1\14\1\16\1\20\1\25\1"+
-            "\23\1\32\1\22\1\31\1\32\1\21\2\32\1\24\1\13\3\32\1\15\3\32\4"+
-            "\uffff\1\32\1\uffff\32\32",
+    protected DFA36 dfa36 = new DFA36(this);
+    static final String DFA36_eotS =
+        "\10\uffff\1\60\1\uffff\1\62\36\51\3\uffff\1\152\6\uffff\16\51\2"+
+        "\172\2\51\1\176\1\177\1\51\1\176\1\177\25\51\1\u0098\2\51\1\u0098"+
+        "\6\51\1\152\2\uffff\1\51\1\u00a3\1\51\1\u00a3\12\51\1\uffff\3\51"+
+        "\2\uffff\27\51\1\u00c9\1\uffff\1\u00ca\1\176\1\u00c9\1\u00ca\1\176"+
+        "\1\u00cb\1\u00cc\1\u00cb\1\u00cc\1\51\1\uffff\1\51\1\u00cf\1\u00d0"+
+        "\1\u00cf\1\u00d0\1\51\1\u00d2\1\51\1\u00d2\11\51\1\u00dd\1\51\1"+
+        "\u00dd\2\u00df\1\51\1\u00e1\1\51\1\u00e1\6\51\1\u00e9\1\51\1\u00e9"+
+        "\1\51\4\uffff\2\51\2\uffff\1\u00ee\1\uffff\1\u00ee\2\u00f0\2\51"+
+        "\1\u00f4\1\u00f5\1\u00f4\1\u00f5\1\u00f6\1\uffff\1\u00f6\1\uffff"+
+        "\1\u00f7\1\uffff\1\u00f7\2\u00f8\1\u00f9\1\u00fa\1\u00f9\1\u00fa"+
+        "\1\uffff\2\51\2\u00fd\1\uffff\1\51\1\uffff\1\51\2\u0100\7\uffff"+
+        "\2\51\1\uffff\2\51\1\uffff\4\51\2\u0109\2\51\1\uffff\4\51\2\u0110"+
+        "\1\uffff";
+    static final String DFA36_eofS =
+        "\u0111\uffff";
+    static final String DFA36_minS =
+        "\1\11\7\uffff\1\75\1\uffff\1\75\1\145\1\105\1\162\1\122\1\150\1"+
+        "\110\1\162\1\122\1\171\1\131\1\141\1\101\1\156\1\116\1\145\1\105"+
+        "\1\157\1\117\1\141\1\101\1\156\1\116\1\157\1\117\1\145\1\105\1\156"+
+        "\1\116\1\141\1\101\2\uffff\1\61\1\56\6\uffff\1\154\1\155\1\114\1"+
+        "\115\1\157\1\154\1\117\1\114\1\145\1\164\1\105\1\124\1\157\1\117"+
+        "\2\60\1\166\1\126\2\60\1\164\2\60\1\124\1\155\1\146\1\115\1\106"+
+        "\1\151\1\111\1\147\1\156\1\107\1\116\1\156\1\116\1\157\1\165\1\117"+
+        "\1\125\2\163\2\123\1\60\1\147\1\144\1\60\1\107\1\104\1\156\1\170"+
+        "\1\116\1\130\1\56\2\uffff\1\145\1\60\1\105\1\60\1\155\1\154\1\115"+
+        "\1\114\1\162\1\150\1\122\1\110\1\165\1\125\1\uffff\1\151\1\111\1"+
+        "\145\2\uffff\1\145\2\105\1\151\1\164\1\111\1\124\1\156\1\116\1\150"+
+        "\1\153\1\110\1\113\1\145\1\105\1\163\1\156\1\123\1\116\1\143\1\164"+
+        "\1\103\1\124\1\60\1\uffff\11\60\1\143\1\uffff\1\103\4\60\1\145\1"+
+        "\60\1\105\1\60\1\160\1\120\1\156\1\116\2\162\2\122\1\164\1\60\1"+
+        "\124\3\60\1\164\1\60\1\124\1\60\1\162\1\122\1\163\1\164\1\123\1"+
+        "\124\1\60\1\151\1\60\1\111\4\uffff\1\164\1\124\2\uffff\1\60\1\uffff"+
+        "\3\60\1\147\1\107\5\60\1\uffff\1\60\1\uffff\1\60\1\uffff\7\60\1"+
+        "\uffff\1\156\1\116\2\60\1\uffff\1\143\1\uffff\1\103\2\60\7\uffff"+
+        "\1\143\1\103\1\uffff\1\157\1\117\1\uffff\1\164\1\124\1\156\1\116"+
+        "\2\60\1\143\1\103\1\uffff\1\141\1\101\1\164\1\124\2\60\1\uffff";
+    static final String DFA36_maxS =
+        "\1\172\7\uffff\1\76\1\uffff\1\75\1\165\1\125\1\165\1\125\1\151\1"+
+        "\111\1\162\1\122\1\171\1\131\1\141\1\101\1\165\1\125\1\151\1\111"+
+        "\1\157\1\117\1\151\1\111\1\156\1\116\1\162\1\122\1\151\1\111\1\166"+
+        "\1\126\1\151\1\111\2\uffff\2\71\6\uffff\1\154\1\155\1\114\1\115"+
+        "\1\157\1\154\1\117\1\114\1\145\1\164\1\105\1\124\1\157\1\117\2\172"+
+        "\1\166\1\126\2\172\1\164\2\172\1\124\1\155\1\146\1\115\1\106\1\151"+
+        "\1\111\1\147\1\156\1\107\1\116\1\156\1\116\1\157\1\165\1\117\1\125"+
+        "\2\163\2\123\1\172\1\147\1\144\1\172\1\107\1\104\1\156\1\170\1\116"+
+        "\1\130\1\71\2\uffff\1\145\1\172\1\105\1\172\1\155\1\154\1\115\1"+
+        "\114\1\162\1\150\1\122\1\110\1\165\1\125\1\uffff\1\151\1\111\1\145"+
+        "\2\uffff\1\145\2\105\1\151\1\164\1\111\1\124\1\156\1\116\1\150\1"+
+        "\153\1\110\1\113\1\145\1\105\1\163\1\156\1\123\1\116\1\143\1\164"+
+        "\1\103\1\124\1\172\1\uffff\11\172\1\143\1\uffff\1\103\4\172\1\145"+
+        "\1\172\1\105\1\172\1\160\1\120\1\156\1\116\2\162\2\122\1\164\1\172"+
+        "\1\124\3\172\1\164\1\172\1\124\1\172\1\162\1\122\1\163\1\164\1\123"+
+        "\1\124\1\172\1\151\1\172\1\111\4\uffff\1\164\1\124\2\uffff\1\172"+
+        "\1\uffff\3\172\1\147\1\107\5\172\1\uffff\1\172\1\uffff\1\172\1\uffff"+
+        "\7\172\1\uffff\1\156\1\116\2\172\1\uffff\1\143\1\uffff\1\103\2\172"+
+        "\7\uffff\1\143\1\103\1\uffff\1\157\1\117\1\uffff\1\164\1\124\1\156"+
+        "\1\116\2\172\1\143\1\103\1\uffff\1\141\1\101\1\164\1\124\2\172\1"+
+        "\uffff";
+    static final String DFA36_acceptS =
+        "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\uffff\1\13\37\uffff\1\53"+
+        "\1\54\2\uffff\1\57\1\11\1\12\1\10\1\15\1\14\67\uffff\1\55\1\56\16"+
+        "\uffff\1\22\3\uffff\1\52\1\27\30\uffff\1\40\12\uffff\1\45\45\uffff"+
+        "\1\37\1\46\1\47\1\50\2\uffff\1\17\1\33\1\uffff\1\43\12\uffff\1\31"+
+        "\1\uffff\1\26\1\uffff\1\41\7\uffff\1\36\4\uffff\1\20\1\uffff\1\21"+
+        "\3\uffff\1\24\1\34\1\25\1\30\1\32\1\35\1\44\2\uffff\1\16\2\uffff"+
+        "\1\23\10\uffff\1\42\6\uffff\1\51";
+    static final String DFA36_specialS =
+        "\u0111\uffff}>";
+    static final String[] DFA36_transitionS = {
+            "\2\55\2\uffff\1\55\22\uffff\1\55\1\1\5\uffff\1\52\1\2\1\3\1"+
+            "\4\1\uffff\1\5\1\53\1\6\2\uffff\11\54\1\uffff\1\7\1\10\1\11"+
+            "\1\12\2\uffff\1\46\1\24\1\42\1\44\1\51\1\16\1\22\1\26\1\40\1"+
+            "\34\1\51\1\32\1\50\1\51\1\30\2\51\1\36\1\14\3\51\1\20\3\51\4"+
+            "\uffff\1\51\1\uffff\1\45\1\23\1\41\1\43\1\51\1\15\1\21\1\25"+
+            "\1\37\1\33\1\51\1\31\1\47\1\51\1\27\2\51\1\35\1\13\3\51\1\17"+
+            "\3\51",
             "",
             "",
             "",
@@ -1866,190 +2701,301 @@ public class SQLParserLexer extends Lexer {
             "",
             "",
             "",
-            "\1\37\1\40",
+            "\1\56\1\57",
             "",
-            "\1\42",
-            "\1\44\17\uffff\1\45",
-            "\1\46\2\uffff\1\47",
-            "\1\50\1\51",
-            "\1\52",
-            "\1\53",
-            "\1\54",
-            "\1\56\3\uffff\1\55\2\uffff\1\57",
-            "\1\61\3\uffff\1\60",
-            "\1\62",
-            "\1\64\7\uffff\1\63",
-            "\1\65",
-            "\1\67\2\uffff\1\66",
-            "\1\70\3\uffff\1\71",
-            "\1\74\4\uffff\1\72\2\uffff\1\73",
-            "\1\76\7\uffff\1\75",
-            "",
-            "",
-            "\12\35",
-            "\1\100\1\uffff\12\35",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\1\61",
+            "\1\63\17\uffff\1\64",
+            "\1\65\17\uffff\1\66",
+            "\1\67\2\uffff\1\70",
+            "\1\71\2\uffff\1\72",
+            "\1\73\1\74",
+            "\1\75\1\76",
+            "\1\77",
+            "\1\100",
             "\1\101",
             "\1\102",
             "\1\103",
             "\1\104",
-            "\1\105",
-            "\1\106",
-            "\1\107",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\1\111",
-            "\12\32\7\uffff\3\32\1\112\26\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\1\115",
-            "\1\116",
+            "\1\106\3\uffff\1\105\2\uffff\1\107",
+            "\1\111\3\uffff\1\110\2\uffff\1\112",
+            "\1\114\3\uffff\1\113",
+            "\1\116\3\uffff\1\115",
             "\1\117",
             "\1\120",
-            "\1\121",
-            "\1\122",
-            "\1\123",
-            "\1\124",
+            "\1\122\7\uffff\1\121",
+            "\1\124\7\uffff\1\123",
             "\1\125",
             "\1\126",
-            "\1\127",
-            "\12\32\7\uffff\2\32\1\130\27\32\4\uffff\1\32\1\uffff\32\32",
-            "\1\132",
-            "\1\133",
-            "\1\134",
-            "\1\135",
+            "\1\130\2\uffff\1\127",
+            "\1\132\2\uffff\1\131",
+            "\1\133\3\uffff\1\134",
+            "\1\135\3\uffff\1\136",
+            "\1\141\4\uffff\1\137\2\uffff\1\140",
+            "\1\144\4\uffff\1\142\2\uffff\1\143",
+            "\1\146\7\uffff\1\145",
+            "\1\150\7\uffff\1\147",
             "",
             "",
-            "\1\136",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\1\140",
-            "\1\141",
-            "\1\142",
-            "\1\143",
-            "\1\144",
-            "",
-            "\1\145",
-            "\1\146",
+            "\11\54",
+            "\1\153\1\uffff\12\151",
             "",
             "",
-            "\1\147",
-            "\1\150",
-            "\1\151",
-            "\1\152",
-            "\1\153",
+            "",
+            "",
+            "",
+            "",
             "\1\154",
             "\1\155",
             "\1\156",
             "\1\157",
             "\1\160",
             "\1\161",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
+            "\1\162",
+            "\1\163",
+            "\1\164",
+            "\1\165",
             "\1\166",
-            "",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
+            "\1\167",
+            "\1\170",
             "\1\171",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
             "\1\173",
             "\1\174",
-            "\1\175",
-            "\1\176",
-            "\1\177",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\3\51\1\175\26\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u0080",
+            "\12\51\7\uffff\3\51\1\u0081\26\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
             "\1\u0082",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
+            "\1\u0083",
             "\1\u0084",
             "\1\u0085",
             "\1\u0086",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
+            "\1\u0087",
             "\1\u0088",
-            "",
-            "",
-            "",
-            "",
             "\1\u0089",
-            "",
-            "",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "",
-            "\12\32\7\uffff\32\32\4\uffff\1\u008b\1\uffff\32\32",
+            "\1\u008a",
+            "\1\u008b",
+            "\1\u008c",
             "\1\u008d",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "",
-            "",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "",
+            "\1\u008e",
+            "\1\u008f",
+            "\1\u0090",
+            "\1\u0091",
+            "\1\u0092",
+            "\1\u0093",
+            "\1\u0094",
             "\1\u0095",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "",
-            "\1\u0097",
-            "",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\1\u0096",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\2\51\1\u0097\27\51",
             "\1\u0099",
-            "",
             "\1\u009a",
-            "",
-            "\1\u009b",
+            "\12\51\7\uffff\2\51\1\u009b\27\51\4\uffff\1\51\1\uffff\32\51",
             "\1\u009c",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
+            "\1\u009d",
             "\1\u009e",
-            "",
             "\1\u009f",
             "\1\u00a0",
-            "\12\32\7\uffff\32\32\4\uffff\1\32\1\uffff\32\32",
+            "\1\u00a1",
+            "\1\153\1\uffff\12\151",
+            "",
+            "",
+            "\1\u00a2",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00a4",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00a5",
+            "\1\u00a6",
+            "\1\u00a7",
+            "\1\u00a8",
+            "\1\u00a9",
+            "\1\u00aa",
+            "\1\u00ab",
+            "\1\u00ac",
+            "\1\u00ad",
+            "\1\u00ae",
+            "",
+            "\1\u00af",
+            "\1\u00b0",
+            "\1\u00b1",
+            "",
+            "",
+            "\1\u00b2",
+            "\1\u00b3",
+            "\1\u00b4",
+            "\1\u00b5",
+            "\1\u00b6",
+            "\1\u00b7",
+            "\1\u00b8",
+            "\1\u00b9",
+            "\1\u00ba",
+            "\1\u00bb",
+            "\1\u00bc",
+            "\1\u00bd",
+            "\1\u00be",
+            "\1\u00bf",
+            "\1\u00c0",
+            "\1\u00c1",
+            "\1\u00c2",
+            "\1\u00c3",
+            "\1\u00c4",
+            "\1\u00c5",
+            "\1\u00c6",
+            "\1\u00c7",
+            "\1\u00c8",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00cd",
+            "",
+            "\1\u00ce",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00d1",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00d3",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00d4",
+            "\1\u00d5",
+            "\1\u00d6",
+            "\1\u00d7",
+            "\1\u00d8",
+            "\1\u00d9",
+            "\1\u00da",
+            "\1\u00db",
+            "\1\u00dc",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00de",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00e0",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00e2",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00e3",
+            "\1\u00e4",
+            "\1\u00e5",
+            "\1\u00e6",
+            "\1\u00e7",
+            "\1\u00e8",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00ea",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u00eb",
+            "",
+            "",
+            "",
+            "",
+            "\1\u00ec",
+            "\1\u00ed",
+            "",
+            "",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\u00ef\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\u00f1\1\uffff\32\51",
+            "\1\u00f2",
+            "\1\u00f3",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "",
+            "\1\u00fb",
+            "\1\u00fc",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "",
+            "\1\u00fe",
+            "",
+            "\1\u00ff",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\u0101",
+            "\1\u0102",
+            "",
+            "\1\u0103",
+            "\1\u0104",
+            "",
+            "\1\u0105",
+            "\1\u0106",
+            "\1\u0107",
+            "\1\u0108",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\1\u010a",
+            "\1\u010b",
+            "",
+            "\1\u010c",
+            "\1\u010d",
+            "\1\u010e",
+            "\1\u010f",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
+            "\12\51\7\uffff\32\51\4\uffff\1\51\1\uffff\32\51",
             ""
     };
 
-    static final short[] DFA9_eot = DFA.unpackEncodedString(DFA9_eotS);
-    static final short[] DFA9_eof = DFA.unpackEncodedString(DFA9_eofS);
-    static final char[] DFA9_min = DFA.unpackEncodedStringToUnsignedChars(DFA9_minS);
-    static final char[] DFA9_max = DFA.unpackEncodedStringToUnsignedChars(DFA9_maxS);
-    static final short[] DFA9_accept = DFA.unpackEncodedString(DFA9_acceptS);
-    static final short[] DFA9_special = DFA.unpackEncodedString(DFA9_specialS);
-    static final short[][] DFA9_transition;
+    static final short[] DFA36_eot = DFA.unpackEncodedString(DFA36_eotS);
+    static final short[] DFA36_eof = DFA.unpackEncodedString(DFA36_eofS);
+    static final char[] DFA36_min = DFA.unpackEncodedStringToUnsignedChars(DFA36_minS);
+    static final char[] DFA36_max = DFA.unpackEncodedStringToUnsignedChars(DFA36_maxS);
+    static final short[] DFA36_accept = DFA.unpackEncodedString(DFA36_acceptS);
+    static final short[] DFA36_special = DFA.unpackEncodedString(DFA36_specialS);
+    static final short[][] DFA36_transition;
 
     static {
-        int numStates = DFA9_transitionS.length;
-        DFA9_transition = new short[numStates][];
+        int numStates = DFA36_transitionS.length;
+        DFA36_transition = new short[numStates][];
         for (int i=0; i<numStates; i++) {
-            DFA9_transition[i] = DFA.unpackEncodedString(DFA9_transitionS[i]);
+            DFA36_transition[i] = DFA.unpackEncodedString(DFA36_transitionS[i]);
         }
     }
 
-    class DFA9 extends DFA {
+    class DFA36 extends DFA {
 
-        public DFA9(BaseRecognizer recognizer) {
+        public DFA36(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 9;
-            this.eot = DFA9_eot;
-            this.eof = DFA9_eof;
-            this.min = DFA9_min;
-            this.max = DFA9_max;
-            this.accept = DFA9_accept;
-            this.special = DFA9_special;
-            this.transition = DFA9_transition;
+            this.decisionNumber = 36;
+            this.eot = DFA36_eot;
+            this.eof = DFA36_eof;
+            this.min = DFA36_min;
+            this.max = DFA36_max;
+            this.accept = DFA36_accept;
+            this.special = DFA36_special;
+            this.transition = DFA36_transition;
         }
         public String getDescription() {
             return "1:1: Tokens : ( T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | SELECT | FROM | WHERE | GROUP | BY | HAVING | ORDER | LIMIT | JOIN | ON | RIGHT | LEFT | INNER | FULL | OUTER | CROSS | DESC | ASC | AS | RANK | DISTINCT | WITH | COUNT | SUM | AVG | MIN | MAX | GROUP_CONCAT | LOGIC | ID | STRING | INT | DOUBLE | WS );";
